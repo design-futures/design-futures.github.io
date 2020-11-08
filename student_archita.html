@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 2</span>
+        <h2>Archita Johari</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>
+                    November 2019, North India was hit by sever air pollution, air quality index reached harmful levels. I t so difficult to breath,
+
+                    always felt like something was stuck in my throat. And during the start of our design and futures studio, I saw this
+                    
+                    documentry “A life on our planet” by David Attenborough, I felt the sense of emergency that they tried to tell because I
+                    
+                    could relate with it due to my past experiences. Then studio started and I read about alternate futures. I thought about
+                    
+                    merging these two and bring the experience as real as possible for the viewers to experience that emergency and take
+                    
+                    significant actions.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>
+                        Inital lectures during the studio were a very big source of inspiration for me. I was amazed to learn about speculative design and how it has been used in the past to provoke the audience. For me studying design was an experience of a different kind, I felt so motivated by every literature I read, by every lecture I attended. I read speculative everything by Dunn and Raby. Read various articles on design fiction, critical design, etc. I kept UN sustainable goals as inspiration and read their articles. My plans was to create design fiction and I implemented it by creating some dark humor comics.
+
+                        Turns out it isn’t as easy to provoke audience and to let them think along the same lines
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>
+                    To communicate my ideas I choose design fiction. I researched about seculative design, saw various examples and created a dark humor
+
+                    comic for my making activity and took it further to create some diegetic prototypes to put viewers in dilemma. There were times when I
+                    
+                    got saturated by reading and to cope up with that, I left working on whatever I was doing and did whatever I felt like (used social media,
+                    
+                    watched movies, shopping, roaming, etc.). Actually, there was a phase that I was hyper excited and couldn’t contain myself to sit in one
+                    
+                    place, and I am still kind of in that place. But I never stopped communicatingabout the environment and how urgent it is to take actions
+                    
+                    with whoever I met, this helped me understandwhat people think. My motive was to unleash my creativity and think about dystopia and
+                    
+                    absurdity, which wasn’t easy for me, since I am more right brained.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>
+                    So, the coolest thing that I did was think like a kid. Let myself free. Made comics and made whatever without fearing that will it make sense or not. It was different kind of liberation. I am still working on creating some more absurd and speculative prototype. I was actually having “FUN”.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>
+                    Most of what I think is already in the visual abstract. It is very important to care about our environment now. Nobody is realizing it, its just a topic for them to discuss. And I am not saying that provoking people is not an easy job. Only people who have been successful in doing that are "trend setters". For example if Gucci starts telling people to recycle their clothes everyone will. Why? because they are influential. That's how distracted 
+
+                    people are careing about less visible and less important things. Simulating the dystopia is one step to make them care about something more important.
+                </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/archita.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

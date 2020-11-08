@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 3</span>
+        <h2>Soumya Talwar</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>I had been studying the philosophy of death—the examination of the nature and value of death, and arguments for and against the existence of souls—and I was interested to explore the various theories and schools of thought around it.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>Dr. Shelly Kagan's lectures on death at the Yale University offered an expansive understanding of the subject. I studied numerous thought experiments from Plato's Phaedo that argues for the immortality of the soul to Descartes' mind-body distinction that makes a case for dualism, insisting that our mind is distinct and separate from our body.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I wanted to attempt to build a fictional alternative reality where we could survive the death of our bodies by virtue of our digital entities that carry an imprint of our personalities and continue to exist on the social sphere even past our deaths, communicating and engaging with other users.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>I began by creating a repository of interests and collecting data from twitter users about how interested they'd be in seeing tweets related to those interests. Using that data, I created a recommendation system for my bot using the K-nearest neighbors learning algorithm. The algorithm recommends interests to the bot based on my own preferences, and the bot then crawls to Wikipedia and pulls content from articles related to my interests. Using that content, it creates artworks that it posts to twitter regularly. The twitter bot is a work in progress, but you can view it @dead_soumya on twitter.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>While I am interested to build and further develop the twitter bot, sometime during the process, as I read various thought experiments, I didn't feel like the bot truly captured the essence of my absurdist fictional reality. I would like to see where the bot takes me, but ultimately I think I'd be interested in working on a piece of written speculative fiction. I'd also be interested in printing a book of the artworks the bot builds over a period of time, or perhaps recording the bot's progress and collecting that data to make an interesting installation that is the coagulation of my digital soul.</p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/soumya.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

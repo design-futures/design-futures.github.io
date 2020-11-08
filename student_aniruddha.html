@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 1</span>
+        <h2>Aniruddha Naik</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>Initially I had started with working on IOT and automation and was thinking about coming up with some kind of product using it. But then after going through the reviews  by my peers and faculty I realised that I could work in a completely different direction where I could use speculative design to come up with an alternative world. I was particularly inspired by the work that Superflex had done in the field of speculative design. I also decided to use speculative design for my enquiry and hence came up with a concept where people live on the surface and inside water.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>While I was doing my research bit I came across a video that said - Is finding life on other planets the solution or we could simply start living on water. This sentence was my main inspiration to work in this direction. I also saw some amazing work that was done on floating cities by Oceanix. I read about how much work had been done on under water architectures and came across many amazing ideas and kept on making notes about things I felt interested me the most. So then instead of coming up with a complete plan for a city i decided to break it into different components like power, transportation etc. and came up with ideas and maps for each and at the end put it all together to come up with a very basic plan for how the city might look.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I wanted to work on the concept of how the world on water and under water would look what kind of structures might exist and made a few sketches. So now i taking forward that idea I am thinking about making  such a world in virtual reality and imagine how a regular world will be in such a city and then allow the user to go around in such a world and experience it. I am working on the idea though it is a far fetched idea like how things are going about.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>I feel the coolest thing I came up with was the renders that I came up with in blender because it was the first time I was doing it and I feel they came out be  better than what I expected. And the hackathon making was a really good experience as it helped me get started with the making process and also it helped me figure out different problems and possibilities that I could work on regarding my enquiry.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>My enquiry took a total different turn from what I had eventually started. For me It was s process of opening up to new possibilities and new approaches rather than sticking to just problem solving. The making process helped me in finding many loop holes in my idea and really understood the approach of think while making. The whole process was very informative for me in various aspects and I have started having a little clarity on what I might want to work on and how to take the enquiry ahead.</p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/aniruddha.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

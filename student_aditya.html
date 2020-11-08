@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 1</span>
+        <h2>Aditya Jain</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>the initial inquiry involved exploring smaller retail outlets and discovering some of the important aspects of physical retail. At first it was a little straightforward in terms of trying to faciltate smaller, physical businesses that were affected by the pandemic. Eventually I kept the Pandemic and retail aside to focus on the HCI aspect of physical touch, with retail as merely a lens.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>At this point the fiction around "touching without touching" came about with regards to human, technology and interfaces. I studied the biologies behind skin sensation and perception, tactile interfaces, presence of enhanced senses in animals and people (Echolocation, Sonar, enhanced vision, proprioception, synesthesia etc.). In Parallel, theories like Chaos, Gaia, technological determinism functioned as a framework that would eventually help me build a container for my fiction film</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I drew up the storyboards and crafted a universe wherein humans could not touch. Unlike having a linear narrative or story, I simply conducted experiments with Magnets, Sound and VFX to visually ideate on the different scenarios wherein the human relies on its own senses to experience daily life. I also built a new relationship between Man and Technology, one that is complimentary as opposed to dominating or convenience-based.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>Shooting the film and conducting tactile experiments led me down to a possible discovery with sound/aural-tactile synesthesia. On further research I found how Ultrasound tranducers could actually simulate textures in a 3D space. At this point my inquiry shifted more towards audio waveforms and the "sound of textures". I began ideating on some simple scaled down applications of concepts wherein a 3d space or image is deconstructed into waveforms. Another concept (artefact/interface) deals with building a cube or surface simulator of sorts that could be used to feedback surface sounds.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>My inquiry had both broadened and narrowed. Broadened in the sense that now I can explore an entire arena surrounding the aural-tactile/visual-tactile space. Narrowed as in sound and sound within HCI became my primary means to explore an alternate form of touch. Most importantly however, a philosphy wherein technology is a compliment to the Human senses as opposed to forming its own experience or completing the task for the Human. I plan to use PureData, Python and Blender to demonstrate some of the thinking.</p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/aditya.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

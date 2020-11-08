@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 2</span>
+        <h2>Alryk Fonseca</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id='idea'></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>
+                    my story started from exploring pollution, then sustainability, waste management next, and then focusing on how design can have a great influence in this cycle. I have been very connected and I feel my purpose is to contribute in whatever way I can to these fields that I hold close. My motivation is my need for a clear conscience while I follow my passions and that I want to create/be part of systems that respect the existing ecosystems and learn to self-regulate and give back. I believe everything is interconnected and all we need to respect these connections. My assumptions were that the path would be easy. Considering that I have been a part of this for a long time. But, the more I knew, I realised how much i have left to learn. And everything is in fact connected. Although overwhelming at times, I feel that I am on the right path and I trust the process.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>
+                        Yes. Janine M Beynus, the concepts put forward by the Ellen MacArthur foundation have been extremely inspiring. And also, a couple of other literary articles and movies. I read articles, listened to some podcasts, searched online, went out into a garden to observe, reflected a lot, and journaled. Documentation.. so this is where I am still learning, I do not know how to visualise/or put down my thoughts when it comes to these ideas. I did plan a couple of things, and I am working with some mind maps now so that I get more clarity about the contents and I can simplify the interconnections.
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="Incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>
+                    Reading, observing, retrospection and listening were my modes of action. It wandered off when is started to focus more on the interconnections. And got quite overwhelmed in the process and started to question my existence in the end. Hehe. I took a good break. Watched a couple of rom-coms and meditated and journaled and reconnected with some old friends. But I have been working my way out of my procrastination and my anxiety, and if nothing else, these five weeks have been monumental in my personal growth. 
+
+                    The making activity was not very productive. I was lost in my thoughts and couldn’t pen them down. But I realised that I need to find solutions that work for me and then maybe think for the community and then move onto the systems.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>
+                    On a personal level, loads. But as far as producing results in this field and to visualise the progress in my thoughts, is something I have just begun to learn and practice.
+
+
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>
+                    I understand that the topic I have chosen is something that is vast, but it gives me a sense of purpose and I will keep going forward in this direction and bring about tangible outputs in good time. I have a long way to go and I need to stay true to myself and give it my all! 
+                </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/alryk.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

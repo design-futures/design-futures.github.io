@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 3</span>
+        <h2>Shivam Gupta</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>
+                    My thought originated from the current way we live our daily lives, and more from a personal point of view, since I have hardly been out of my house in the last 8 months, and it has been quite a shift in how I have experienced this time vs. how it used to be before.
+
+                    There has been an increased interest in digital solutions, and there has been effort to make them feel as real as possible (think VR and AR). But how close can we really get?
+                    
+                    
+                    
+                    
+                </br>
+                    My basic assumption here is that certain aspects of an experience are lost when it goes fully digital. And I wanted to understand what these aspects are, if they are noticeable and the intensity of their effect on the experience.
+                    
+                    The idea here is not to call out digital technologies but to understand the differences here and maybe  use both these sides to enhance each of them.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>
+                        I started to understand why there is a lot of miscommunication while using tech such as messaging and emails, and that led me to the path of trying to see what is different in texts and emails from a real interaction. Can the same concept be extended to other activities such as shopping, reading, etc.
+
+
+                    </br>
+                        One thing that did inspire me were computer games. We've come a long way from text based games to games based on fully 3d environments and multi channel sound, and it will be interesting to understand how these experiences differ.
+                        
+                </br>
+                        
+                        One assumption I did end up changing was that real experiences are always better than virtual ones. While these both are different, one is not necessarily better than the other, and the choice also becomes quite subjective.
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>
+                    The way I wanted to originally go through this was to study experiences and build some way of quantifying them so they can be clearly differentiated based on how immersive they are. But getting to that was a little too difficult and during the make-a-thon I decided to shift to first trying to understand what choices people currently would make between real and digital experiences. This study is yet to be done and how I use this study on a user's choices is something I'm still working on.
+
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>
+                    Although currently incomplete, the idea of using an interactive story to map out what choices people make, and then assign them a score based on those choices, putting their preference somewhere on a spectrum ranging from completely digital to completely real, was something I find fascinating and, something I will be pursuing moving forward.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>
+                    Through the studio I have discovered interesting questions related to my enquiry. I'll continue to work on the idea, and get new insights as things move forward. It will be interesting to find a way to relate my initial idea of measuring how immersive an experience is, to what choices a person tends to make between these experiences. I also learnt that experiences are multi dimensional and would require an elaborate system if they are to be measured in any way.
+                </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/shivam.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

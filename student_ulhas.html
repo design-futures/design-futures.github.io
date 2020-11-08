@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 4</span>
+        <h2>Ulhas Abraham</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>
+                    I was initially looking at the following subjects - immersive experiences,gamification and consumerism.
+                </br>   I then chose advertising as it stands at the intersection of psychology,visual design and experience design - subjects that fascinate me to no end
+            </br>  I started from the viewpoint of the problem of consumerism in our society,but as I explored marketing practices more,I realized that ads are going to stay for years to come,but the way we interact with them and our relationships with them will evolve in vastly different ways
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="Research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>
+                        I was fascinated by slavoj zizek's take on consumerism - how brands today make us actually feel good about being consumers, and how dangerous that strategy is.
+                    </br>   Ambi Parameswaran's analysis of Indian ads over the decades (since independence) also influenced my thought process quite a bit.
+                    </br>
+                        I was also intrigued by Kunal Shah's (CRED) take on marketing and crafting memorable experiences which could offset dependencies on 
+                                traditional advertising.
+                </br>
+                        Digital ethnography  </br>
+                        I looked at how startups are looking to disrupt,not just in terms of products, but also in the realm of marketing.
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>
+                    I sourced a lot of information and insights from podcasts, videos and especially from observing my own interactions with ads on a daily basis
+                </br> My inquiry - advertising and UX was fairly generic and all encompassing, so I had to narrow it down further. I was able to do this thanks to inputs given by my peer group and facilitators
+                </br>  I then narrowed down my inquiry further to look at history of ads in the Indian context and drawing parallels with modern consumer behaviors.
+            </br> From the making activity, I expected new questions to form from the new insights that would develop as I rabbit holed further into my inquiry.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>
+                    The studio gave me an opportunity to make quite a few artefacts, and it always gives me immense satisfaction to make things by hand, whenever possible. Tomato drop shells, custom watch faces to the multiple sketches I made to brainstorm, all informed my process in one way or another.
+                </br> The coolest shit I made would probably be the short video I created as part of the hackathon.I did video making after ages,and was happy with the fact that I was able to use minimal scenes and dialogue to get my point across.
+                    
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>
+                    India has a rich history and our ads and films over the years have held a mirror to our society.Whether its a nobel prize or a political scam,ad campaigns have not shied away from speaking up on them.
+                </br>As we move towards a hyper connected world, there is a growing worry that we're losing touch with our roots.Our diversity is what makes us Indian,and a lot of brands have managed to weave memorable stories around this,cutting across all sections of society.
+            </br>  In a country like India,where televsion and radio continue to be fairly prevalent in our homes,its important for brands to create effective storytelling along with envisioning curated experiences for urban consumers.
+        </br
+        > This also presents an exciting prospect of re-imagining advertising for rural markets - how can companies use hyper local traditions and practices and build on those platforms to woo potential consumers ? The UX here deviates from the standard notion of UI/UX design and brings with it new possibilities as the primary medium isn't only screens.                    
+                </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/ulhas.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

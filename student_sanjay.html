@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 1</span>
+        <h2>Sanjay Sudarshan</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>
+                    My enquiry is inspired by one of the articles i read about how insurance companies where incentivizing customers for sharing their fitbit data. How Society controls people is something i was always curious about. The question that next hit me was what other aspects of life can be represented numerically to gain better control over human body.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>
+                        Michele Foucault is a philosopher who has always grabbed my attention. During the research of my enquiry it lead me to one of his friend Gilles Deleuze. His idea on the transition of society from a Disciplinary societies (i.e where your body is controlled by space) to a society of control which regulates access such that you couldn't defy even if you wanted to is the main idea i wanted to explore more through this enquiry.
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>
+                    I wanted to start by building an artifact which would act as an entry point into a Ficitonal world that i wanted to make. As i started making the artifact and started imagining about what that world would look like i got stuck with this thought that how would this world be different from other works of fictions which has already explored this concept.(For eg Psychopass).This lead me to play a devils advocate with questions like "What's wrong with being controlled" and "what emotions does one feel when they think they are being controlled which eventually landed me on the topic of Free will.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>
+                    To explore the idea i decided to make a gamified car experience in which drivers would constantly be provided with feedback and get rated. For this i made a wireframe on how it would look along with it i made a satirical fictitious article from the future which would give a glimpse of the world in which these changes have taken place.
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>
+                    I wanted to approach this enquiry by speculating and analayzing on probable futures which would have a direct impact on me and the activites that i liked doing.I followed this path till the design of car interface.
+
+But as i went on to make the ficitious news article the ideas of gamification when to all directions not just that would have individually affected me.What started out as a serious article took a satrirical take on gamification,i went with the flow and the article started look like  more of a parody and out of touch with reality.But this got me linking topics with gamification which i hadn't thought before.That gave me 
+
+broader vision on many topics quickly.And with this excerise i believe i have more idea of how i want my fictonal world to look like.
+                </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/sanjay.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

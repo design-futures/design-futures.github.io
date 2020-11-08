@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 2</span>
+        <h2>Ruchi Jain</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>Sustainability is a term that has become an everyday word. As an architect/designer, it has always intrigued me is in today's scenario just sustainable development enough? We are facing climate change, depleting ozone layer, many flora and fauna on the edge of extinction, will sustaining the current environment for our future generations sufficient. Do we need to think a step further? Can we instead of seeing waste as something to managed or despised of, be thought of as a resource? Can we create restorative ecosystems where waste can be used as a catalyst of change? All these thoughts and ideas fascinated and motivated me to carry these inquiries further.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>I started about reading various papers based on restorative ecosystems and waste up-scaling to update myself on the researches already done or ongoing. I also studied government policies and works of various organisations both government and non-government working in this sector. </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>For me major challenge was to decide upon should I keep a broader approach to my inquiry  and study about all kinds of wastes or go about studying one type of waste industry at a time. I decided better way to learn and get some concrete results out will be focusing on one set of audience for this studio. Therefore,  due to to my previous experience in construction industry, I focused on construction and demolition waste. 
+
+                </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>I created an interactive game board during 36 hour hackathon, to create a deeper understanding of why we need to think beyond 3Rs - Reduce, reuse and recycle. The learning outcomes of the game aimed at, no matter what decision players will take which make them think they are winning will ultimately end up at them all losing. As with every move they make, environmental units which I referred to as "Tragedy of the common" will either remain same or degrade. So while at individual level player might think they are winning, collectively they all are losing.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>In the starting phase of my enquiry, I thought of waste as an environmental and social problem that humans need to tackle. But with 5  weeks of research and pondering upon it, I  my whole perspective of seeing things were wrong, so I have rejected my previous thinking lens, and now I think with proper research and technological inventions, waste can be re-seen as a “resource”. A resource with future potential to generate energy, new materials and products.
+                     So I conclude “Waste = Resource” </p>
+            </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/ruchi.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

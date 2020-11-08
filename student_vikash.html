@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 1</span>
+        <h2>Vikash Raj</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>When I stumbled upon braille, I realised that there has not been much attention been given to it unlike other mainstream commercial products/solutions. I wanted to look at braille as a probable design solution, and try to discover it's flaws and scope of improvement in it with the help of new technologies. A project called "ELIA Alphabet" motivated me as it was the starting point when I was certain about the scope in braille language.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>I began my research with Podcast, articles, research paper and case studies shared by my peers and faculties. I noted the useful points on Miro that could inform my enquiry and make my assumptions visible for later reference. I also looked at existing designs so that I can find ways to improve on my idea.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I had to keep reminding myself that the studio was about speculation and not really about problem solving per say. So I had to take a pause from research, reflect on what is there and spend more time ideating a world without braille and designing life of blind person in that reality. I ideated a use-case scenario and tried to list down certain areas that I would be working on for during the make-a-thon.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>In order to design a future without braille, I had to depend a lot on audio and tactile technology. The design ideas may not be very good by themselves, but they definitely have scope to solve some of issues of current design e.g. portability. The making exercise was surely was motivating insight for me. I also realised that it's not just a product that I needed to make, but also a system design in long run; which I'm pretty excited about to dig into.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>I think for me the whole journey was a learning not only in terms of building something for the enquiry, but also to adapt to new ways of approaching the creative process, to keep a balance between research/rabbit holing to get insight and also focusing on learning through making; to reflect-in-action and reflect-on-action. Reading various research papers and case studies helped me find flaws in mainstream design culture.  Although I still don't have clear answer about my enquiry, but I've found macro aspects around that to study.</p>
+            </div>
+        </div>
+        <div id='right'>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/vikash.jpg" id="visual_abstract">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 4</span>
+        <h2>Aishwarya Manjunath</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>Personal Pain Point (applied for 60 jobs at the same time): all followed the same cumbersome process - collect resumes (exaggeration), request interviews (inconsiderate of language and cultural barriers), administer assessments (prioritises English and Maths abilities), request work samples (unequal playing field), check references (selection bias).
+
+                    Is there a less cumbersome and more engaging and fun way of doing this?</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>Literature Review
+                        Analysed existing psychometric games
+                        Conducted first hand survey (employers + employees) to gather pain points and understand existing processes.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I struggled to approach this as an "enquiry" - rather, I found myself assuming that gamification is the best way forward for the recruitment industry; therefore, my research was biased towards finding evidence for my assumption. So, midway into the enquiry, I made a conscious choice to think critically about my assumptions. I spent time in speculating a dystopian future of gamified recruitment.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>Created a memory game that tests auditory working memory.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>Studio 1 journey has made me more conscious of my own personal biases and their potential impact on any design solution that I create. I wondered if it's possible to train people to avoid cognitive bias and whether it is even necessary. That is, 'Is "objective" design possible and necessarily the best outcome?"
+
+
+
+                    Also, I also came closer to understanding that "universal design" is a myth. For example, gamification of recruitment marginalises differently abled individuals and those that are on the low end of the digital divide spectrum. Should we strive for universal design? Or would this only lead to a less inclusive society?</p>
+            </div>
+        </div>
+        <div id='right'>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/aishwarya.jpg" id="visual_abstract">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

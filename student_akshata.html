@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+        <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space_Grotesk"-->
+        
+    </head>
+<body style='font-family: Space_Grotesk;'>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 3</span>
+        <h2>Akshata Parate</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>The idea behind choosing this inquiry is to understand the human psychology and how the emerging technologies are impacting the human health and human psychology</p>
+            </div>
+        <br><br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>For this inquiry, I researched a lot about the technology and its various aspects like screen time, blue lights, etc. I also studied about the human physical and mental health to know how technology impacting our health. 
+                        I also researched that in which way technology is changing our mental health and human psychology.</p>
+            </div>
+        <br><br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>My complete inquiry was just revolving around the technology and human life. So when I start exploring about inquiry, I studies the goods and bads about technology. Because technology as a whole is not at all bad. So I need to study particular aspects of technology that are impacting our life and through this research I came to the study of social media to which most of the people specially teenagers and youngers are addicted. So I start studying social media addiction and to understand the role of social media I conducted an User Survey. In that user survey, I asked people to think about their life without smartphone and social media and I god quite good response for that.
+                <br>
+                According to the response which I gather through user survey, It is good to know that the youngsters are quite aware about the life beyond the social media and smartphones. But still there are some people that are not quite good with leaving this. The most common reason not able to get away from social media is FOMO, feeling of anxiety and missing the virtual world of friends, memes, likes, comments, etc. While imagining the life without social media, some youngsters is carrying quite positive perspective towards it. They feel that though in starting it will be little difficult for them to spend time with out social media and phones, quitting the social media and smartphones for a month can make their life more calm and peaceful and they have multiple options which will help them to survive without technology for a month.
+                <br>
+                    To get out of this ZONE, I used to watch series and anime.</p>
+            </div>
+        <br><br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>For me the wow moment will be understanding my inquiry in a deeper way and to come up with one concrete idea to do my further research. Also I learned a lot about technology and how human brain works while exploring my enquiry which feels great. As a human, we study from pictures or videos early that from text. So, During Making section, I tried to make a video of all my illustrations that explains the research of my inquiry. Also the thing which I experience in making session is that constantly thinking about the topic for 36 hours opens more doors for my thinking and helped me to get more clarity for my inquiry.
+                    to get all my study and understanding at a single platform, I make a below video.
+
+                    <a href='https://drive.google.com/file/d/1DZUSUCvIenItzhrNpBbkFy4QfVyVUGOm/view?usp=sharing'>https://drive.google.com/file/d/1DZUSUCvIenItzhrNpBbkFy4QfVyVUGOm/view?usp=sharing</a>
+                </p>
+            </div>
+        <br><br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>Studying psychology of social media addiction and Digital Wellbeing<br>
+             Every coin has two sides, so the social media also does. Though the social media help us to connect with people, to find our old friends, to find the help from nearby it also has its other side that is completely filled with anxiety, depression and addiction. According to the study, it seems that one in the four is addicted towards their phone and social media. So my inquiry will include the study related to psychology of social media and also the research of digital wellbeing.</p>
+            </div>
+        </div>
+        <div id='right'>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/akshata.jpg" id="visual_abstract">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

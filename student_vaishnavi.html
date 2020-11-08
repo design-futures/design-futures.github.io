@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 2</span>
+        <h2>Vaishnavi Sridhar</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>1.I was always fascinated with natural handmade products and had this imagination of being at a place where I could work closely with nature, hence this topic struck me.
+                </br>
+                    2.Nature motivates or drives me for endless possibilities as that to my inquiry.
+                 </br>
+                    3.I had assumptions that I don't have much possibilities as various researches had the solution to it already.
+                    
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>1.There was no particular person or a fiction that inspired me.<br>
+
+
+
+                        2.The exploration started with knowing the current solutions to my inquiry and then thinking about what would be my contribution to it.<br>
+                        
+                        
+                        
+                        3.The planning was mostly to read about the existing models  and gathering data related to it and then speculation.<br>
+                        
+                        
+                        
+                        4.The research was mostly through studying brands and their idea of sustainability.
+                        
+                        </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>1.As I preferred hands on work, I collected dry leaves and twigs
+
+                    to experiment their property. Starting locally.
+                    
+                    
+                    
+                </br>2.The start was exciting to me and I loved the fact that I could use direct materials to showcase my plan or process but as it proceeded, I had a tunnel vision of not surely knowing if it was right or wrong to do so. I knew that I lacked experimentation.
+                    
+                    
+                    
+                </br>3.I didn't procastinate but I wasn't developing ideas beyond a level and I felt stuck.
+                    
+                    
+                    
+            </br>4.Knowing about various alternate solutions worked for me like directly using material into a tangible output and understanding the need to use the particular material.
+                    
+                    
+                    
+         </br>5.Making Activity would indulge me into thinking beyond what i intend and also make me figure out the possible  and not possible aspects. It will also guide me towards my possible outcome</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p> 1.The coolest thing would be that I made a tangible output 
+
+                    only by using plant material  
+                    
+                    
+                    
+                </br>2.I won't consider it as an achievement but it surely made me think beyond the box. Wow would be  that I tried using one of those outputs for about a couple of days </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>Sustainable thinking is a realization that the resources we have now are not going to last forever and that we need to change what we are doing so we will be able to continue living the way we are now. Sustainable thinking is having the constant awareness of trying not to live so wastefully and being conscious of what we are taking from the environment and what we are putting back into it and whether our actions are harmful or not. I also think being sustainable is a balancing act. It works like a give and take.
+
+
+
+                    <br>Leather in this case: though being a natural material was never termed sustainable, it always had these pros and cons that we have been discussing and various betterments have been suggested. This prompted me to research the existing alternatives and how far they are feasible. Discussing ideas made me realize that there are many ways of exploring a particular material. I was surprised by many new discoveries but the one that convinced me was these discoveries started from the kitchen. It is also WOW that various elements out of our imagination has given good results than expected.
+                    
+                    
+                    
+                </br>Along the inquiry, I made some interesting explorations through discussion and also looking from  locally available resources which in turn helped in making outputs that could describe materials. What went wrong in this was the way I interpreted the making, I missed out various facts of experimenting materials in their true sense which shifted my focus .In future, I want to explore more on these points and also think about its implications.</p>
+            </div>
+        </div>
+        <div id='right'>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/vaishnavi.jpg" id="visual_abstract">
+                        </td>
+                     </tr>
+                </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>

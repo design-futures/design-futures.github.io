@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./info_style.css">
+    </head>
+<body>
+    <header>
+        <div id="header_logo"><img></div>
+        <div id="header_text"> <h1 id='heading'>Design and Future</h1></div>
+    </header>
+    <div id='main'>
+        <span id='title'>Group 4</span>
+        <h2>Anantha Padmanaban</h2>
+        <div id='left'>
+            <button class='accordian'>Idea<span><img class="arrows" src="./images/down-arrow.png" id="idea"></span></button>
+            <div class='panel'>
+                <p><b>What was the origin of your enquiry? Where are you coming from on, what motivated you to take up this exploration? What are your philosophies 
+                    around the idea? What motivated you towards this? What were some assumptions and notions you had? What was the idea or thought you came across?
+                </b>
+                </p>
+                <p>Can VR and AR technology used in the education institutions for career guidance for the 11th grade and for shaping a better future for the next generation. IBM Plex Sans</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Research<span><img class="arrows" src="./images/down-arrow.png" id="research"></span></button>
+            <div class='panel'>
+                <p><b>Did any author or fiction or philosophy inspire you? How did you go about exploring the inquiry you were interested in?
+                    How did you document the info you were coming across? How did you devise or plan an approach? 
+                    Did you crush or prove any assumptions? How did you perform research?</b></p>
+
+                    <p>I went about acquiring existing information through People's research on VR and AR, TEDx Talks, and their research. Documentation was done in a digital platform design research process, "Miro" which allowed me to stack all my information ,assumptions and speculative ideas in a single board.
+
+                        Technological innovation is often prioritized for industries such as aerospace or automobile. This inherently favors the advancement of certain industries at the cost of other industries such as education or healthcare.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Incubation<span><img class="arrows" src="./images/down-arrow.png" id="incubation"></span></button>
+            <div class='panel'>
+                <p><b>What were certain approaches/tools/methods you used to act on your inquiry? How was your inquiry wandering off at this point? Did you start developing a tunnel vision, or boredom around your topic? How much procastinate, 
+                    and how did you do that? How did you get out that "ZONE"? What is your motive and expectations from Making Activity ?
+                </b></p>
+                <p>I had to keep reminding myself that the studio was about speculation and not about coming up with a solution. I had to run back and forth between inquiry and research to narrowing it down to a single aspect.
+
+                    The method used to arrange information was through design research process, which allowed me to connect the dots and rethink my inquiry.</p>
+            </div>
+        </br></br>
+        <button class='accordian'>Making<span><img class="arrows" src="./images/down-arrow.png" id="making"></span></button>
+            <div class='panel'>
+                <p><b>What is the coolest shit you've pulled off in these 3 weeks if any? Is there some tangible outcome or output that came about (even a sketch or wireframe works!)? Is there any achievement/discovery/wow moment 
+                    you were able to find (do upload it!)? Would you like to share some graphic/visual/aural experience of your making session (hackathon)?
+                </b></p>
+                <p>I learnt how to render a environment or a simulation within few days of time using Blender software.
+                    
+                    </p>
+            </div>
+        </br></br>
+        <button class='accordian'>Reflection<span><img class="arrows" src="./images/down-arrow.png" id="reflection"></span></button>
+            <div class='panel'>
+                <p><b>Put up your updated visual abstract and a brief summary of reflection</b></p>
+                <p>An Individual can run multiple stimulations according to his/her interest. </br>
+
+                    Virtual Reality is still in its initial phase. It would require a lot of research and development in the coming years to completely utilize VR in the educational sector. I analyzed, what were the adverse implications of the extensive use of VR to the youth age-group who are our next generation. The issues which I 
+                    could analyze is an addiction to virtual simulation and other health-related issues 
+                    like being paranoid or the damage to their eyes and affect in a psychological and have zero social skills with the humans.</p>
+                
+                    <a href='https://drive.google.com/file/d/1xRBSoEwXiLzCIHQI9QgECf9fDF47Mtc5/view?usp=sharing'>https://drive.google.com/file/d/1xRBSoEwXiLzCIHQI9QgECf9fDF47Mtc5/view?usp=sharing</a>
+                </br>
+                    <a href='https://drive.google.com/file/d/17DvrlPEnperA108wOpiatYPkd_hcw_Js/view?usp=sharing'>https://drive.google.com/file/d/17DvrlPEnperA108wOpiatYPkd_hcw_Js/view?usp=sharing</a>
+                
+                </div>
+        </div>
+        <div id='right'>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/anantha.jpg" id="visual_abstract">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='footer'>
+        <h3>Design and Future Studio</h3>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordian");
+    var i;
+
+    for(i=0; i< acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        }else
+        {
+            panel.style.maxHeight = panel.scrollHeight + "10000px";
+        }
+        });
+    }
+    </script>
+</body>
+</html>
