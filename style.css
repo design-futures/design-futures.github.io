@@ -64,14 +64,14 @@ button:hover{
     text-align: left;
 }
 #content{
-    font-family: 'Space_Grotesk', sans-serif;
+font-family: 'Space_Grotesk', sans-serif;
 top: 188px;
 left: 84px;
 width: 612px;
 height: 549px;
 background: #081329 0% 0% no-repeat padding-box;
 border-radius: 30px;
-opacity: 0.38;
+opacity: 0.7;
 padding: 20px;
 }
 .title{

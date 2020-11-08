@@ -35,7 +35,7 @@ dataSource: {
     "value": "150",
     "tooltext":"Aditya Jain,Sanjay Sudarshan,Aniruddha Naik,Roshni Sundar Rajan,Vikash Raj",
     "category": [{
-        "label": "Internet Forums",
+        "label": "Altverse Service",
         "color": "#f8bd19",
         "value": "35",
         "tooltext": "Sensors + Intelligence,Products,Conversational agents/Chatbot,Internet Forums",
